@@ -7,6 +7,7 @@ import six from '../assets/svg/projects/six.svg'
 import seven from '../assets/svg/projects/seven.svg'
 import eight from '../assets/svg/projects/eight.svg'
 
+ 
 
 export const projectsData = [
     {
@@ -16,7 +17,7 @@ export const projectsData = [
         tags: ['React', 'CSS', 'Material Ui'],
         code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
         demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: one
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMp2NIV5R5taehJQn6NhTlebvzyavnysVfeA&usqp=CAU'
     },
     {
         id: 2,

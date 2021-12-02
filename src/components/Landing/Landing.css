@@ -27,7 +27,8 @@
 }
 
 .landing--container-left {
-  flex: 35%;
+  flex: 25%;
+  
   height: 100%;
   display: flex;
   align-items: flex-end;
@@ -240,3 +241,10 @@
     top: 20%;
   }
 }
+
+
+/* .dis2{
+  border: 2px solid red;
+  width: 1000px;
+  
+} */

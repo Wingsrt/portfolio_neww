@@ -14,6 +14,7 @@ import {
     FaGithub,
     FaYoutube,
     FaBlogger,
+    FaMedium,
 } from 'react-icons/fa';
 
 function Landing() {
@@ -77,11 +78,12 @@ function Landing() {
                     <div className='lcl--content'>
                         {socialsData.linkedIn && (
                             <a
-                                href={socialsData.linkedIn}
+                                // href={socialsData.linkedIn}
+                                href='https://medium.com/@squirrelstudio0'
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaLinkedin
+                                <FaMedium
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='LinkedIn'
@@ -120,14 +122,14 @@ function Landing() {
                                 target='_blank'
                                 rel='noreferrer'
                             >
-                                <FaYoutube
+                                <FaLinkedin
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
-                                    aria-label='YouTube'
+                                    aria-label='FaLinkedin'
                                 />
                             </a>
                         )}
-                        {socialsData.blogger && (
+                        {/* {socialsData.blogger && (
                             <a
                                 href={socialsData.blogger}
                                 target='_blank'
@@ -139,11 +141,12 @@ function Landing() {
                                     aria-label='Blogger'
                                 />
                             </a>
-                        )}
+                        )} */}
                     </div>
                 </div>
                 <img
-                    src={headerData.image}
+                    // src={headerData.image}
+                    src='/profilepic.png'
                     alt=''
                     className='landing--img'
                     style={{
@@ -160,19 +163,21 @@ function Landing() {
                         style={{ color: theme.tertiary }}
                     >
                         <h6>{headerData.title}</h6>
-                        <h2 className='myname'>{headerData.name}</h2>
-                        <p>{headerData.desciption}</p>
+                        <h2 className='myname'>{headerData.name}</h2><div className='dis2'>
+                        <p  >{headerData.desciption}</p>
+                        </div>
 
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
                                 <a
-                                    href={headerData.resumePdf}
-                                    download='resume'
-                                    target='_blank'
-                                    rel='noreferrer'
+                                    // href={headerData.resumePdf}
+                                    href={'https://drive.google.com/file/d/11lntzfDTNIiKSyP0bV-LjLwizO1rOx7S/view?usp=sharing'}
+                                    // download='resume'
+                                     target='_blank'
+                                    // rel='noreferrer'
                                 >
                                     <Button className={classes.resumeBtn}>
-                                        Download CV
+                                        RESUME
                                     </Button>
                                 </a>
                             )}
